@@ -60,7 +60,7 @@ func Div(x, y Fixed) Fixed {
 }
 
 func Mod(x, y Fixed) Fixed {
-    result := Fixed((int64(x)<<16)%int64(y))
+    result := Fixed(int64(x)%int64(y))
     record(result)
     return result
 }
